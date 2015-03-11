@@ -2,9 +2,9 @@
 using namespace std;
 int main()
 {
-	int arr[5] = { 1 , 2 , 3 , 4 , 5 };
-	int full_arr[8] = { 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 };
-	int true_arr[8] = { 0, 1 , 2 , 3 , 4 , 5 , 6 , 7 };
+	int arr[5] = { 1 , 2 , 3 , 4 , 5 }; // k
+	int full_arr[8] = { 1 , 2 , 3 , 4 , 5 , 6 , 7 , 8 }; // sample of n ( from 1 to n )
+	int true_arr[8] = { 4, 12 , 27 , 42 , 43 , 45 , 100 , 121 }; // true n (just elements of any type)
 	int num = 1;
 	int n, m;
 	n = 7;
