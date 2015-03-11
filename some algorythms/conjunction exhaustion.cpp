@@ -21,7 +21,7 @@ int main()
 			while (arr[i] < full_arr[n - l])
 			{
 				arr[i]++;
-				for (int f = i + 1; f <= k; f++)
+				for (int f = i + 1; f <= k; f++) 
 					arr[f] = arr[i] + f - i;
 				for (int s = 0; s <= k; s++)
 					cout << true_arr[arr[s] - 1];
