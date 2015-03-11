@@ -10,7 +10,7 @@ int main()
 	n = 7;
 	int k = 4;
 	int l = 0;
-	for (int s = 0; s < 5; s++)
+	for (int s = 0; s < 5; s++) 
 		cout << true_arr[s];
 	cout << endl;
 	int i;
@@ -20,8 +20,8 @@ int main()
 		{
 			while (arr[i] < full_arr[n - l])
 			{
-				arr[i]++;
-				for (int f = i + 1; f <= k; f++) 
+				arr[i]++; 
+				for (int f = i + 1; f <= k; f++)
 					arr[f] = arr[i] + f - i;
 				for (int s = 0; s <= k; s++)
 					cout << true_arr[arr[s] - 1];
