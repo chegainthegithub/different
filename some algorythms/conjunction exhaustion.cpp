@@ -15,7 +15,7 @@ int main()
 	cout << endl;
 	int i;
 	while (true)
-	{
+	{ 
 		for (i = k; i >= 0; i--)
 		{
 			while (arr[i] < full_arr[n - l])
