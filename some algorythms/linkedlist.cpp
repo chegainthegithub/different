@@ -1,43 +1,46 @@
 #include <iostream>
 using namespace std;
+struct samp
+{
+	int x;
+	samp *next;
+};
 class linkedlist
 {
 public:
-	int x;
-	linkedlist *Head;
+	samp *Head;
 	linkedlist()
 	{
 		Head = NULL;
 	}
 	void add(int x)
 	{
-		linkedlist *temp = new linkedlist;
+		samp *temp = new samp;
 		temp->x = x;
-		temp->Head = Head;
+		temp->next = Head;
 		Head = temp;
 	}
 	void show()
 	{
-		linkedlist *temp = Head;
+		samp *temp = Head;
 		cout << "your list: ";
 		while (temp != NULL)
 		{
 			cout << temp->x << " ";
-			temp = temp->Head;
+			temp = temp->next;
 		}
 
 	}
 	~linkedlist()
 	{
-	/*	while (Head != NULL)
+		while (Head != NULL)
 		{
-			linkedlist *temp = Head->Head; //better use structure rly
+			samp *temp = Head->next;
 			delete Head;
 			Head = temp;
-		}*/
+		}
 	}
 };
-
 int main()
 {
 	linkedlist a;
